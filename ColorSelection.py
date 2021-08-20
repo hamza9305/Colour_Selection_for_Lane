@@ -2,8 +2,11 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
 
+indir = r'Give the directory to input image'
+outdir = r'Give the directory to output image'
+
 # Read in the image
-image = mpimg.imread(r'F:\Self_driving_cars\ImageForColorSelection/test.jpg')
+image = mpimg.imread(indir)
 plt.imshow(image)
 plt.show()
 
@@ -32,5 +35,5 @@ color_select[thresholds] = [0,0,0]
 plt.imshow(color_select)
 plt.show()
 
-# Uncomment the following code if you wish to save the image
-mpimg.imsave(r"F:\GitHub_Live_Projects\Colour_Selection_for_Lane\resource/test-after.png", color_select)
+
+mpimg.imsave(outdir, color_select)
