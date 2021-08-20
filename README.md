@@ -2,9 +2,7 @@
 
 The script [ColorSelection.py](https://github.com/hamza9305/Colour_Selection_for_Lane_Findings/blob/main/ColorSelection.py) is able to find lane markings on an input image using colour boundaries 
 
- 
-
-![conversion](https://github.com/hamza9305/Fisheye-to-Cylindrical/blob/main/data/conversion.gif)
+![LaneImage](https://github.com/hamza9305/Colour_Selection_for_Lane_Findings/blob/main/resource/test.jpg)
 
  
 
