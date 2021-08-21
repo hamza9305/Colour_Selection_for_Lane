@@ -10,17 +10,16 @@ image = mpimg.imread(indir)
 plt.imshow(image)
 plt.show()
 
-# Grab the x and y size and make a copy of the image
+# Make a copy of the image
 ysize = image.shape[0]
 xsize = image.shape[1]
 color_select = np.copy(image)
 
 # Define color selection criteria
-###### MODIFY THESE VARIABLES TO MAKE YOUR COLOR SELECTION
 red_threshold = 200
 green_threshold = 200
 blue_threshold = 200
-######
+
 
 rgb_threshold = [red_threshold, green_threshold, blue_threshold]
 
@@ -34,6 +33,5 @@ color_select[thresholds] = [0,0,0]
 # Display the image
 plt.imshow(color_select)
 plt.show()
-
 
 mpimg.imsave(outdir, color_select)
